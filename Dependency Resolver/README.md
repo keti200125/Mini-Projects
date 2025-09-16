@@ -17,3 +17,31 @@ Optionally, it can also calculate **inverse dependencies** (i.e., determine the 
 ---
 
 
+##  Example Input and Output
+
+```text
+📦 Example Input:
+
+A B C
+B C E
+C G
+D A F
+E F
+F H
+
+📊 Example Output:
+
+A B C E F G H
+B C E F G H
+C G
+D A B C E F G H
+E F H
+F H
+
+📊 Example Output
+(Inverse Dependencies):
+
+G C B A D
+F E B A D
+H F E B A D
+```
